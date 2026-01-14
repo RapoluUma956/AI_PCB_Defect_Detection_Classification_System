@@ -1,55 +1,55 @@
 <h1>🧠 AI PCB Defect Detection & Classification</h1>
 
-An end-to-end PCB defect detection system using Image Processing + YOLOv8 Deep Learning + Streamlit Web Interface.
+- An end-to-end PCB defect detection system using Image Processing + YOLOv8 Deep Learning + Streamlit Web Interface.
 
-This project detects, classifies, and visualizes PCB manufacturing defects such as:
+- This project detects, classifies, and visualizes PCB manufacturing defects such as:
 
-->Missing Hole
-->Mouse Bite
-->Open Circuit
-->Short
-->Spur
-->Spurious Copper
+   - Missing Hole<br>
+   - Mouse Bite<br>
+   - Open Circuit<br>
+   - Short<br>
+   - Spur<br>
+   - Spurious Copper<br>
 
 <hr>
 
 <h2>📁 Project Structure</h2>
-AI_PCB_Defect_Detection_Classification/
-│
-├── CNN Model Training/
-│   └── YOLO training scripts & notebooks
-│
-├── Image Processing/
-│   └── Image preprocessing & defect crop generation code
-│
-├── Results/
-│   ├── Image_Processing_Results/
-│   │   └── 64x64 cropped defect images
-│   └── Streamlit_Results/
-│       └── Output screenshots
-│
-├── Streamlit/
-│   ├── Model/
-│   │   └── best_yolov8_pcb_defects.pt
-│   ├── app.py
-│   ├── YOLO_inference.py
-│   └── YOLO_requirements.txt
-│
-├── LICENSE
-└── README.md
+AI_PCB_Defect_Detection_Classification/<br>
+│<br>
+├── CNN Model Training/<br>
+│   └── YOLO training scripts & notebooks<br>
+│<br>
+├── Image Processing/<br>
+│   └── Image preprocessing & defect crop generation code<br>
+│<br>
+├── Results/<br>
+│   ├── Image_Processing_Results/<br>
+│   │   └── 64x64 cropped defect images<br>
+│   └── Streamlit_Results/<br>
+│       └── Output screenshots<br>
+│<br>
+├── Streamlit/<br>
+│   ├── Model/<br>
+│   │   └── best_yolov8_pcb_defects.pt<br>
+│   ├── app.py<br>
+│   ├── YOLO_inference.py<br>
+│   └── YOLO_requirements.txt<br>
+│<br>
+├── LICENSE<br>
+└── README.md<br>
 
 <hr>
 
-<h2>🔄 Overall Workflow</h2>
-PCB Images
-   ↓
-Image Processing (Defect Cropping)
-   ↓
-YOLOv8 Model Training
-   ↓
-YOLO Inference
-   ↓
-Streamlit Web Application
+<h2>🔄 Overall Workflow</h2><br>
+PCB Images<br>
+   ↓<br>
+Image Processing (Defect Cropping)<br>
+   ↓<br>
+YOLOv8 Model Training<br>
+   ↓<br>
+YOLO Inference<br>
+   ↓<br>
+Streamlit Web Application<br>
 
 <hr>
 
@@ -143,11 +143,12 @@ Streamlit Web Application
 📦 Streamlit Requirements
  - 📄 File: YOLO_requirements.txt
     🔹 Install requirements
-        pip install -r YOLO_requirements.txt
+        ```pip install -r YOLO_requirements.txt```
 
 <hr>
 
 <h2>▶️ How to Run the Project (Order Matters!)</h2>
+
 ✅ Step 1: Image Processing
 
 - Run image processing scripts to generate cropped defect images.
@@ -165,8 +166,8 @@ Streamlit Web Application
 - Streamlit/Model/best_yolov8_pcb_defects.pt
 
 ✅ Step 3: Run Streamlit App
-cd Streamlit
-streamlit run app.py
+      ```cd Streamlit
+      streamlit run app.py```
 
 <hr>
 
@@ -189,21 +190,21 @@ streamlit run app.py
 📂 Results/Streamlit_Results/
 Contains:
 
-    - Output screenshots
+   - Output screenshots
 
-    - Detected defects with bounding boxes
+   - Detected defects with bounding boxes
 
-    - Confidence scores
+   - Confidence scores
 
 <hr>
 
 <h3>🧠 Key Features</h3>
 
-✔ Automated defect detection
-✔ Handles multiple defect types
-✔ Small-defect friendly (YOLOv8)
-✔ Real-time inference
-✔ Web-based visualization
+✔ Automated defect detection<br>
+✔ Handles multiple defect types<br>
+✔ Small-defect friendly (YOLOv8)<br>
+✔ Real-time inference<br>
+✔ Web-based visualization<br>
 
 <hr>
 
