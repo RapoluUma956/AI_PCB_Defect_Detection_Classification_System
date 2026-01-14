@@ -1,0 +1,29 @@
+# =========================
+# Deep Learning Framework
+# =========================
+torch
+torchvision
+
+# =========================
+# YOLOv8 (Ultralytics)
+# =========================
+ultralytics
+opencv-python
+
+# =========================
+# Web App
+# =========================
+streamlit
+
+# =========================
+# Image & Numerical Processing
+# =========================
+Pillow
+numpy
+imagehash
+scikit-image
+
+# =========================
+# Plotting / Visualization
+# =========================
+matplotlib
