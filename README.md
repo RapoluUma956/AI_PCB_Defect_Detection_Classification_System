@@ -14,30 +14,32 @@
 <hr>
 
 <h2>📁 Project Structure</h2>
-AI_PCB_Defect_Detection_Classification/<br>
-│<br>
-├── CNN Model Training/<br>
-│   └── YOLO training scripts & notebooks<br>
-│<br>
-├── Image Processing/<br>
-│   └── Image preprocessing & defect crop generation code<br>
-│<br>
-├── Results/<br>
-│   ├── Image_Processing_Results/<br>
-│   │   └── 64x64 cropped defect images<br>
-│   └── Streamlit_Results/<br>
-│       └── Output screenshots<br>
-│<br>
-├── Streamlit/<br>
-│   ├── Model/<br>
-│   │   └── best_yolov8_pcb_defects.pt<br>
-│   ├── app.py<br>
-│   ├── YOLO_inference.py<br>
-│   └── YOLO_requirements.txt<br>
-│<br>
-├── LICENSE<br>
-└── README.md<br>
 
+   ```
+   AI_PCB_Defect_Detection_Classification/<br>
+   │<br>
+   ├── CNN Model Training/<br>
+   │   └── YOLO training scripts & notebooks<br>
+   │<br>
+   ├── Image Processing/<br>
+   │   └── Image preprocessing & defect crop generation code<br>
+   │<br>
+   ├── Results/<br>
+   │   ├── Image_Processing_Results/<br>
+   │   │   └── 64x64 cropped defect images<br>
+   │   └── Streamlit_Results/<br>
+   │       └── Output screenshots<br>
+   │<br>
+   ├── Streamlit/<br>
+   │   ├── Model/<br>
+   │   │   └── best_yolov8_pcb_defects.pt<br>
+   │   ├── app.py<br>
+   │   ├── YOLO_inference.py<br>
+   │   └── YOLO_requirements.txt<br>
+   │<br>
+   ├── LICENSE<br>
+   └── README.md<br>
+   ```
 <hr>
 
 <h2>🔄 Overall Workflow</h2><br>
