@@ -14,7 +14,8 @@ from ultralytics import YOLO
 
 print("--- PCB YOLOv8 Detection Pipeline ---")
 
-MODEL_PATH = "Model/best_yolov8_pcb_defects.pt"
+current_dir = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(current_dir, "Model/best_yolov8_pcb_defects.pt")
 
 print("🔍 Loading YOLO model...")
 yolo_model = YOLO(MODEL_PATH)
