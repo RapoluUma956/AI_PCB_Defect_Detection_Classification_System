@@ -1,15 +1,14 @@
 # =========================
 # Deep Learning Framework
 # =========================
-torch
-torchvision
+torch==2.2.2
+torchvision==0.17.2
 
 # =========================
 # YOLOv8 (Ultralytics)
 # =========================
-ultralytics
-opencv-python-headless
-opencv-python==0.0.0
+ultralytics==8.0.20
+opencv-python-headless==4.8.1.78
 
 # =========================
 # Web App
