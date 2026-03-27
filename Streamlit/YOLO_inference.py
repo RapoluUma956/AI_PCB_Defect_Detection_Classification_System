@@ -83,10 +83,11 @@ def draw_detections_on_image(image, detections):
     img_w, img_h = image.size
 
     try:
-        font = ImageFont.truetype("DejaVuSans.ttf", 32)
+        font_path = os.path.join(current_dir, "DejaVuSans.ttf")
+        font = ImageFont.truetype(font_path, 32)
     except:
         font = ImageFont.load_default()
-
+        
     for det in detections:
 
         box = det["box"]  # [x1, y1, x2, y2]
