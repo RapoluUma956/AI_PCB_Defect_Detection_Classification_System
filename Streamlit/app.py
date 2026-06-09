@@ -1,6 +1,9 @@
 import io
 from datetime import datetime
 
+import os
+os.environ["TORCH_ALLOWED_OBJECTS"] = "ultralytics.nn.tasks.DetectionModel"
+
 import streamlit as st
 from PIL import Image
 
