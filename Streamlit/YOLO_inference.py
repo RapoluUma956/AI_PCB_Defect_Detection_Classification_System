@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw, ImageFont
 from ultralytics import YOLO
 
+torch.serialization.add_safe_globals(["ultralytics.nn.tasks.DetectionModel", "ultralytics.utils.IterableSimpleNamespace"])
 
 #==================================================
 #LOAD YOLO MODEL
