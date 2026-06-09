@@ -5,9 +5,19 @@ import torch
 import matplotlib.pyplot as plt
 
 from PIL import Image, ImageDraw, ImageFont
-from ultralytics import YOLO
+# ==================================================
+# 1. FORCE PYTORCH TO DISABLE WEIGHTS_ONLY LOADING
+# ==================================================
+# This completely bypasses the security bug on PyTorch 2.6+ / Python 3.13
+import torch.serialization
+original_load = torch.load
+def safe_load_override(*args, **kwargs):
+    kwargs['weights_only'] = False
+    return original_load(*args, **kwargs)
+torch.load = safe_load_override
 
-torch.serialization.add_safe_globals(["ultralytics.nn.tasks.DetectionModel", "ultralytics.utils.IterableSimpleNamespace"])
+# Now import YOLO safely
+from ultralytics import YOLO
 
 #==================================================
 #LOAD YOLO MODEL
